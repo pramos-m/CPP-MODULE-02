@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eralonso <eralonso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 11:02:55 by eralonso          #+#    #+#             */
-/*   Updated: 2023/07/05 11:02:56 by eralonso         ###   ########.fr       */
+/*   Created: 2023/08/16 15:32:06 by pramos-m          #+#    #+#             */
+/*   Updated: 2023/08/16 15:32:07 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include	<iostream>
 #include	<cmath>
