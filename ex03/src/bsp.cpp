@@ -6,8 +6,8 @@
 /*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 15:33:06 by pramos-m          #+#    #+#             */
-/*   Updated: 2023/08/16 15:33:11 by pramos-m         ###   ########.fr       */
+/*   Updated: 2023/08/22 13:06:02 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"Point.hpp"
+#include	"../inc/Point.hpp"
