@@ -6,12 +6,12 @@
 /*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 15:32:19 by pramos-m          #+#    #+#             */
-/*   Updated: 2023/08/16 15:32:22 by pramos-m         ###   ########.fr       */
+/*   Updated: 2023/08/22 13:02:43 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	<iostream>
-#include	"Fixed.hpp"
+#include	"../inc/Fixed.hpp"
 
 int	main( void )
 {

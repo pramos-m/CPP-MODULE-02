@@ -6,7 +6,7 @@
 /*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 15:32:06 by pramos-m          #+#    #+#             */
-/*   Updated: 2023/08/16 15:32:07 by pramos-m         ###   ########.fr       */
+/*   Updated: 2023/08/22 13:02:54 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include	<iostream>
 #include	<cmath>
-#include	"Fixed.hpp"
+#include	"../inc/Fixed.hpp"
 
 Fixed::Fixed( void )
 {
