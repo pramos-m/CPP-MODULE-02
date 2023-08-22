@@ -6,7 +6,7 @@
 /*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 15:32:28 by pramos-m          #+#    #+#             */
-/*   Updated: 2023/08/22 13:24:24 by pramos-m         ###   ########.fr       */
+/*   Updated: 2023/08/22 14:45:42 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,45 @@ class Fixed
 		// Destructor
 		~Fixed( void );
 		// Operator: Assignation
-
+		Fixed&			operator=( Fixed &fixp );
+		// Operator: Assignation: Constant
+		Fixed&			operator=( Fixed const &fixp );
+		// Operator: Comparison: '>' == "Greater than"
+		bool			operator>( const Fixed &fixp ) const;
+		// Operator: Comparison: '<' == "Lower than"
+		bool			operator<( const Fixed &fixp ) const;
+		// Operator: Comparison: '>=' == "Greater-equal than"
+		bool			operator>=( const Fixed &fixp ) const;
+		// Operator: Comparison: '<=' == "Lower-equal than"
+		bool			operator<=( const Fixed &fixp ) const;
+		// Operator: Comparison: '==' == "Equal"
+		bool			operator==( const Fixed &fixp ) const;
+		// Operator: Comparison: '!=' == "Unequal"
+		bool			operator!=( const Fixed &fixp ) const;
+		// Operator: Arithmetic: '+' == "Addition"
+		Fixed			operator+( const Fixed &fixp ) const;
+		// Operator: Arithmetic: '-' == "subtraction"
+		Fixed			operator-( const Fixed &fixp ) const;
+		// Operator: Arithmetic: '*' == "Multiplication"
+		Fixed			operator*( const Fixed &fixp ) const;
+		// Operator: Arithmetic: '/' == "Division"
+		Fixed			operator/( const Fixed &fixp ) const;
+		// Operator: Arithmetic: '++' == "Pre-increment"
+		Fixed			operator++( void );
+		// Operator: Arithmetic: '++' == "Post-increment"
+		Fixed			operator++( int );
+		// Operator: Arithmetic: '--' == "Pre-decrement"
+		Fixed			operator--( void );
+		// Operator: Arithmetic: '--' == "Post-decrement"
+		Fixed			operator--( int );
+		// Static function: Minimun
+		static Fixed&		min( Fixed& first, Fixed& second );
+		// Static function: Constant: Minimun
+		static const Fixed&	min( const Fixed& first, const Fixed& second );
+		// Static function: Maximun
+		static Fixed&		max( Fixed& first, Fixed& second );
+		// Static function: Constant: Maximun
+		static const Fixed&	max( const Fixed& first, const Fixed& second );
 		// Getter: _fixp
 		int			getRawBits( void ) const;
 		// Setter: _fixp
@@ -45,6 +83,9 @@ class Fixed
 		int			toInt( void ) const;
 };
 
-
+// Operator: Output
+std::ostream&	operator<<( std::ostream& out, Fixed& fixp );
+// Operator: Constant: Output
+std::ostream&	operator<<( std::ostream& out, const Fixed& fixp );
 
 #endif

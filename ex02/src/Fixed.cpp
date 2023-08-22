@@ -6,13 +6,13 @@
 /*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 15:32:40 by pramos-m          #+#    #+#             */
-/*   Updated: 2023/08/22 13:24:28 by pramos-m         ###   ########.fr       */
+/*   Updated: 2023/08/22 15:13:44 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	<iostream>
 #include	<cmath>
-#include	"Fixed.hpp"
+#include	"../inc/Fixed.hpp"
 
 // Constructor: Default
 Fixed::Fixed( void )
@@ -32,11 +32,6 @@ Fixed::Fixed( const float num )
 	this->_fixp = roundf(num * (1 << _bitFrac));
 }
 
-// Destructor
-Fixed::~Fixed( void )
-{
-}
-
 // Constructor: Copy
 Fixed::Fixed( Fixed& fixp )
 {
@@ -49,6 +44,10 @@ Fixed::Fixed( const Fixed &fixp )
 	*this = fixp;
 }
 
+// Destructor
+Fixed::~Fixed( void )
+{
+}
 // Getter: _fixp
 int	Fixed::getRawBits( void ) const
 {
@@ -74,3 +73,4 @@ float	Fixed::toFloat( void ) const
 }
 
 // Operator: Assignation
+
